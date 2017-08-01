@@ -1,3 +1,8 @@
+/* William Rainaud */
+/* Rutgers Coding Bootcamp - Homework 2*/
+/* Media Queries */
+
+
 
 * {
   	box-sizing: border-box;
@@ -239,16 +244,503 @@ footer {
 	padding: 35px 0;
 }
 
-/* Media Queries */
-
-
 
 @media only screen and (max-width: 980px) {
+
+
+* {
+  	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/concrete-texture.png);
+	font-family: "Arial", "Helvetica Neue", sans-serif;
+	line-height: 1.8em;
+	color: #777777;
+}
+
+header {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 40px;
+  	border-bottom: 3px solid;
+  	border-color: #cccccc;
+  	display: block;
+}
+
+h1,h2,h3{
+	font-family: "Georgia", Times New Roman, serif;
+	font-weight: 600;
+	color: #4aaaa5;
+}
+
+p {
+	margin-bottom: 25px;
+}
+
+/* Page Title Styles */
+
+h1.title {
+	display: inline-block;
+	background: #4aaaa5; 
+	padding: 30px 35px;
+	font-size: 40px; 
+	color: white; 
+	
+}
+
+h2.page-title {
+	margin-bottom: 35px;
+	border-bottom: 3px solid #dddddd; 
+	padding:10px 0 30px 0;
+	font-size: 32px; 
+	color: #4aaaa5; 
+}
+
+h3.box-ribbon {
+	display: inline-block;
+	padding: 12px 0;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background: #4aaaa5;
+	color: #fff;
+	bottom: 13px;
+	font-size: 22px;
+}
+
+h3.sidebar-title {
+	margin-bottom: 20px;
+	border-bottom: 2px solid #dddddd;
+	padding: 0 0 15px 0;
+	font-size: 20px;
+}
+
+/* Navigation Styles */
+
+nav {
+	float: right;
+}
+
+nav ul {
+	padding: 30px 0;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 0 8px; 
+	border-right: 1px solid #ccc;
+}
+
+nav ul li:last-child {
+	border-right: none;
+}
+
+nav ul li a {
+	padding: 5px 8px;
+	color: #777777;
+	text-decoration: none;
+}
+
+nav ul li a:hover { 
+	color: #fff;
+	background: #4aaaa5;
+} 
+
+
+/* Main Section Style */
+
+.main{
+	width: 960px; 
+	margin: 0 auto; 
+}
+
+/* Image Style */
+
+img.profilepic {
+	float: left; 
+	margin: 39px -5px 35px -33px;
+	max-width: 250px;
+	transform: rotate(90deg);
+}
+
+
+/* Side Bar Styles */
+
+ul.buttons {
+/*Base Class for Buttons*/
+}
+
+ul.buttons li.abtn {
+	display: inline-block;
+}
+
+ul.buttons li.abtn a img {
+	max-width: 60px;
+	margin-right: 9px;
+}
+
+ul.buttons li.abtn:nth-child(3n) a img {
+	margin-right: 0px;
+} 
+
+
+/* Styles for Portfolio Page */
+
+li.project-box {
+	display: inline-block;
+	width: 275px;
+	height: 206px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 40px;
+}
+
+li.hangman {
+	background-image: url(../images/wjr_images-3.jpg);
+}
+
+li.rpg {
+	background-image: url(../images/wjr_images-2.jpg);
+}
+
+li.trivia {
+	background-image: url(../images/wjr_images-11.jpg);
+}
+
+li.widget {
+	background-image: url(../images/wjr_images-19.jpg);
+}
+
+li.rps {
+	background-image: url(../images/wjr_images-14.jpg);
+}
+
+li.project-box:nth-child(odd) {
+	float: left;
+}
+
+li.project-box:nth-child(even) {
+	float: right;
+}
+
+/* Styles for Contact Forms */
+
+label {
+	display: block;
+	font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+	width: 100%;
+	height: 30px;
+	margin: 4px 0 10px 0;
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	font-size: 15px;
+}
+
+textarea {
+	width: 100%;
+	height: 149px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	font-size: 15px;
+}
+
+input[type="submit"] {
+	background: #4aaaa5;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	padding: 10px 20px;
+}
+
+#left-column {
+	float: left;  
+	background: #fff;
+	width: 650px; 
+	margin-bottom: 200px;
+	border: 1px solid #dddddd;
+	padding: 30px;
+}
+
+#right-column {
+	float: right;
+	background: #fff;
+	width: 270px;
+	border: 1px solid #dddddd;
+	padding: 30px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0; 
+	width: 100%;
+	color: #acaaa6;
+	background-color: #666666;
+	text-align: center;
+	margin-top: 30px;
+	border-top: 8px solid #4aaaa5;
+	padding: 35px 0;
+}
 
 }
 
 
 @media only screen and (max-width: 768px){
+* {
+  	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/concrete-texture.png);
+	font-family: "Arial", "Helvetica Neue", sans-serif;
+	line-height: 1.8em;
+	color: #777777;
+}
+
+header {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 40px;
+  	border-bottom: 3px solid;
+  	border-color: #cccccc;
+  	display: block;
+}
+
+h1,h2,h3{
+	font-family: "Georgia", Times New Roman, serif;
+	font-weight: 600;
+	color: #4aaaa5;
+}
+
+p {
+	margin-bottom: 25px;
+	margin-top: -5px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+/* Page Title Styles */
+
+h1.title {
+	display: inline-block;
+	background: #4aaaa5; 
+	margin-left: 20px;
+	padding: 20px 40px;
+	font-size: 26px; 
+	color: white; 
+	
+}
+
+h2.page-title {
+	margin-bottom: 20px;
+	border-bottom: 3px solid #dddddd; 
+	padding:0px 0 10px 0;
+	font-size: 22px; 
+	color: #4aaaa5; 
+}
+
+h3.box-ribbon {
+	display: inline-block;
+	padding: 8px 0;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background: #4aaaa5;
+	color: #fff;
+	bottom: 13px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h3.sidebar-title {
+	margin-bottom: 20px;
+	border-bottom: 2px solid #dddddd;
+	padding: 10px 0 10px 0;
+	font-size: 20px;
+}
+
+/* Navigation Styles */
+
+nav {
+	float: right;
+}
+
+nav ul {
+	padding: 20px 0;
+}
+
+nav ul li{
+	font-size: 13px;
+	display: inline-block;
+	padding: 0 10px 0 10px; 
+	border-right: 1px solid #ccc;
+	font-size: 13px;
+}
+
+nav ul li:last-child {
+	border-right: none;
+}
+
+nav ul li a {
+	padding: 5px 8px;
+	color: #777777;
+	text-decoration: none;
+}
+
+nav ul li a:hover { 
+	color: #fff;
+	background: #4aaaa5;
+}
+
+.main{
+	width: 100%; 
+	margin: 0 auto; 
+}
+
+img.profilepic {
+	float: left;
+	margin: 23px -8px 20px -20px;
+	max-width: 240px;
+    height: 200px;
+    
+}
+
+/* Side Bar Styles */
+
+ul.buttons {
+/*Base Class for Buttons*/
+}
+
+ul.buttons li.abtn {
+	display: inline-block;
+}
+
+ul.buttons li.abtn a img {
+	max-width: 52px;
+	margin-right: 9px;
+	margin-bottom: 5px;
+}
+
+ul.buttons li.abtn:nth-child(3n) a img {
+	margin-right: 0px;
+}
+
+/* Portfolio Box Styles */
+
+li.project-box {
+	display: inline-block;
+	width: 215px;
+	height: 146px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 2px 5px;
+}
+
+li.hangman {
+	background-image: url(../images/wjr_images-3.jpg);
+}
+
+li.rpg {
+	background-image: url(../images/wjr_images-2.jpg);
+}
+
+li.trivia {
+	background-image: url(../images/wjr_images-11.jpg);
+}
+
+li.widget {
+	background-image: url(../images/wjr_images-19.jpg);
+}
+
+li.rps {
+	background-image: url(../images/wjr_images-14.jpg);
+}
+
+li.project-box:nth-child(odd) {
+	float: none;
+}
+
+li.project-box:nth-child(even) {
+	float: none;
+}
+
+/* Styles for Contact Forms */
+
+form{
+	margin-top: -20px;
+}
+
+label {
+	display: block;
+	font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+	width: 100%;
+	height: 30px;
+	margin: 4px 0 10px 0;
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	font-size: 12px;
+}
+
+textarea {
+	width: 100%;
+	height: 90px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+	font-size: 12px;
+}
+
+input[type="submit"] {
+	background: #4aaaa5;
+	color: #fff;
+	font-size: 14px;
+	border: none;
+	padding: 10px 20px;
+}
+
+#left-column { 
+	position: fixed;
+	background: #fff;
+	width: 728px; 
+	height: 420px;
+	margin: -20px 20px 20px ;
+	border: 1px solid #dddddd;
+	padding: 20px;
+}
+
+#right-column {
+	position: fixed;
+	bottom: 20px;
+	background: #fff;
+	width: 728px;
+	height: 150px;
+	margin: 0px 20px 70px 20px;
+	border: 1px solid #dddddd;
+	padding: 5px 20px 5px 20px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0; 
+	width: 100%;
+	color: #acaaa6;
+	background-color: #666666;
+	text-align: center;
+	margin-top: 30px;
+	border-top: 8px solid #4aaaa5;
+	padding: 15px 0;
+}
 
 }
 
