@@ -2,249 +2,6 @@
 /* Rutgers Coding Bootcamp - Homework 2*/
 /* Media Queries */
 
-
-
-* {
-  	box-sizing: border-box;
-}
-
-body {
-	background-image: url(../images/concrete-texture.png);
-	font-family: "Arial", "Helvetica Neue", sans-serif;
-	line-height: 1.8em;
-	color: #777777;
-}
-
-header {
-	width: 100%;
-	background-color: #fff;
-	margin-bottom: 40px;
-  	border-bottom: 3px solid;
-  	border-color: #cccccc;
-  	display: block;
-}
-
-h1,h2,h3{
-	font-family: "Georgia", Times New Roman, serif;
-	font-weight: 600;
-	color: #4aaaa5;
-}
-
-p {
-	margin-bottom: 25px;
-}
-
-/* Page Title Styles */
-
-h1.title {
-	display: inline-block;
-	background: #4aaaa5; 
-	padding: 30px 35px;
-	font-size: 40px; 
-	color: white; 
-	
-}
-
-h2.page-title {
-	margin-bottom: 35px;
-	border-bottom: 3px solid #dddddd; 
-	padding:10px 0 30px 0;
-	font-size: 32px; 
-	color: #4aaaa5; 
-}
-
-h3.box-ribbon {
-	display: inline-block;
-	padding: 12px 0;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	background: #4aaaa5;
-	color: #fff;
-	bottom: 13px;
-	font-size: 22px;
-}
-
-h3.sidebar-title {
-	margin-bottom: 20px;
-	border-bottom: 2px solid #dddddd;
-	padding: 0 0 15px 0;
-	font-size: 20px;
-}
-
-/* Navigation Styles */
-
-nav {
-	float: right;
-}
-
-nav ul {
-	padding: 30px 0;
-}
-
-nav ul li{
-	display: inline-block;
-	padding: 0 8px; 
-	border-right: 1px solid #ccc;
-}
-
-nav ul li:last-child {
-	border-right: none;
-}
-
-nav ul li a {
-	padding: 5px 8px;
-	color: #777777;
-	text-decoration: none;
-}
-
-nav ul li a:hover { 
-	color: #fff;
-	background: #4aaaa5;
-} 
-
-
-/* Main Section Style */
-
-.main{
-	width: 960px; 
-	margin: 0 auto; 
-}
-
-/* Image Style */
-
-img.profilepic {
-	float: left; 
-	margin: 39px -5px 35px -33px;
-	max-width: 250px;
-	transform: rotate(90deg);
-}
-
-
-/* Side Bar Styles */
-
-ul.buttons {
-/*Base Class for Buttons*/
-}
-
-ul.buttons li.abtn {
-	display: inline-block;
-}
-
-ul.buttons li.abtn a img {
-	max-width: 60px;
-	margin-right: 9px;
-}
-
-ul.buttons li.abtn:nth-child(3n) a img {
-	margin-right: 0px;
-} 
-
-
-/* Styles for Portfolio Page */
-
-li.project-box {
-	display: inline-block;
-	width: 275px;
-	height: 206px;
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 40px;
-}
-
-li.hangman {
-	background-image: url(../images/wjr_images-3.jpg);
-}
-
-li.rpg {
-	background-image: url(../images/wjr_images-2.jpg);
-}
-
-li.trivia {
-	background-image: url(../images/wjr_images-11.jpg);
-}
-
-li.widget {
-	background-image: url(../images/wjr_images-19.jpg);
-}
-
-li.rps {
-	background-image: url(../images/wjr_images-14.jpg);
-}
-
-li.project-box:nth-child(odd) {
-	float: left;
-}
-
-li.project-box:nth-child(even) {
-	float: right;
-}
-
-/* Styles for Contact Forms */
-
-label {
-	display: block;
-	font-size: 18px;
-}
-
-input[type="text"], input[type="email"] {
-	width: 100%;
-	height: 30px;
-	margin: 4px 0 10px 0;
-	border: 1px solid #ddd;
-	padding: 4px 8px;
-	font-size: 15px;
-}
-
-textarea {
-	width: 100%;
-	height: 149px;
-	margin-top: 8px;
-	margin-bottom: 10px;
-	border: 1px solid #ddd;
-	padding: 4px 8px;
-	font-size: 15px;
-}
-
-input[type="submit"] {
-	background: #4aaaa5;
-	color: #fff;
-	font-size: 18px;
-	border: none;
-	padding: 10px 20px;
-}
-
-#left-column {
-	float: left;  
-	background: #fff;
-	width: 650px; 
-	margin-bottom: 200px;
-	border: 1px solid #dddddd;
-	padding: 30px;
-}
-
-#right-column {
-	float: right;
-	background: #fff;
-	width: 270px;
-	border: 1px solid #dddddd;
-	padding: 30px;
-}
-
-footer {
-	position: fixed;
-	bottom: 0; 
-	width: 100%;
-	color: #acaaa6;
-	background-color: #666666;
-	text-align: center;
-	margin-top: 30px;
-	border-top: 8px solid #4aaaa5;
-	padding: 35px 0;
-}
-
-
 @media only screen and (max-width: 980px) {
 
 
@@ -289,6 +46,11 @@ h1.title {
 	
 }
 
+h1.title:hover { 
+	color: #fff;
+	background: #666666;
+} 
+
 h2.page-title {
 	margin-bottom: 35px;
 	border-bottom: 3px solid #dddddd; 
@@ -308,6 +70,11 @@ h3.box-ribbon {
 	bottom: 13px;
 	font-size: 22px;
 }
+
+h3.box-ribbon:hover { 
+	color: #fff;
+	background: #666666;
+} 
 
 h3.sidebar-title {
 	margin-bottom: 20px;
@@ -459,6 +226,11 @@ input[type="submit"] {
 	padding: 10px 20px;
 }
 
+input[type="submit"]:hover { 
+	color: #fff;
+	background: #666666;
+} 
+
 #left-column {
 	float: left;  
 	background: #fff;
@@ -492,6 +264,7 @@ footer {
 
 
 @media only screen and (max-width: 768px){
+
 * {
   	box-sizing: border-box;
 }
@@ -520,9 +293,9 @@ h1,h2,h3{
 
 p {
 	margin-bottom: 25px;
-	margin-top: -5px;
+	margin-top: 0px;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 30px;
 }
 
 /* Page Title Styles */
@@ -540,29 +313,29 @@ h1.title {
 h2.page-title {
 	margin-bottom: 20px;
 	border-bottom: 3px solid #dddddd; 
-	padding:0px 0 10px 0;
-	font-size: 22px; 
+	padding:0px 0 20px 0;
+	font-size: 25px; 
 	color: #4aaaa5; 
 }
 
 h3.box-ribbon {
 	display: inline-block;
-	padding: 8px 0;
+	padding: 10px 0;
 	position: absolute;
 	width: 100%;
 	text-align: center;
 	background: #4aaaa5;
 	color: #fff;
 	bottom: 13px;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 300;
 }
 
 h3.sidebar-title {
 	margin-bottom: 20px;
 	border-bottom: 2px solid #dddddd;
-	padding: 10px 0 10px 0;
-	font-size: 20px;
+	padding: 12px 0 12px 0;
+	font-size: 22px;
 }
 
 /* Navigation Styles */
@@ -605,9 +378,11 @@ nav ul li a:hover {
 
 img.profilepic {
 	float: left;
-	margin: 23px -8px 20px -20px;
-	max-width: 240px;
-    height: 200px;
+	margin:50px -18px 35px -49px;
+	padding-bottom: 10px;
+    width: 355px;
+    height: 275px;
+    max-width: none;
     
 }
 
@@ -622,9 +397,10 @@ ul.buttons li.abtn {
 }
 
 ul.buttons li.abtn a img {
-	max-width: 52px;
+	max-width: 65px;
 	margin-right: 9px;
 	margin-bottom: 5px;
+	margin-top: 4px;
 }
 
 ul.buttons li.abtn:nth-child(3n) a img {
@@ -635,12 +411,12 @@ ul.buttons li.abtn:nth-child(3n) a img {
 
 li.project-box {
 	display: inline-block;
-	width: 215px;
-	height: 146px;
+	width: 325px;
+	height: 145px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 2px 5px;
+	margin: 0px 0px 10px 0px;
 }
 
 li.hangman {
@@ -665,6 +441,7 @@ li.rps {
 
 li.project-box:nth-child(odd) {
 	float: none;
+	margin-right: 30px;
 }
 
 li.project-box:nth-child(even) {
@@ -674,7 +451,7 @@ li.project-box:nth-child(even) {
 /* Styles for Contact Forms */
 
 form{
-	margin-top: -20px;
+	margin-top: 0px;
 }
 
 label {
@@ -693,9 +470,9 @@ input[type="text"], input[type="email"] {
 
 textarea {
 	width: 100%;
-	height: 90px;
+	height: 220px;
 	margin-top: 8px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	border: 1px solid #ddd;
 	padding: 4px 8px;
 	font-size: 12px;
@@ -713,8 +490,8 @@ input[type="submit"] {
 	position: fixed;
 	background: #fff;
 	width: 728px; 
-	height: 420px;
-	margin: -20px 20px 20px ;
+	height: 590px;
+	margin: -10px 20px 20px ;
 	border: 1px solid #dddddd;
 	padding: 20px;
 }
@@ -724,7 +501,7 @@ input[type="submit"] {
 	bottom: 20px;
 	background: #fff;
 	width: 728px;
-	height: 150px;
+	height: 180px;
 	margin: 0px 20px 70px 20px;
 	border: 1px solid #dddddd;
 	padding: 5px 20px 5px 20px;
@@ -744,7 +521,7 @@ footer {
 
 }
 
-@media screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
 
 * {
   	box-sizing: border-box;
@@ -773,8 +550,9 @@ header {
 h1.title {
 	width: 100%;
 	background: #4aaaa5; 
+	margin-left: 0px;
 	padding: 15px 35px;
-	font-size: 26px; 
+	font-size: 28px; 
 	color: white; 
 	text-decoration: none;
 	
@@ -784,29 +562,31 @@ h2.page-title {
 	margin-bottom: 30px;
 	border-bottom: 3px solid #dddddd; 
 	padding:0px 0 15px 0;
-	font-size: 20px; 
+	font-size: 24px; 
 	color: #4aaaa5; 
 }
 
 h3.box-ribbon {
 	display: inline-block;
-	padding: 3px 0;
+	padding: 8px 0;
 	position: absolute;
 	width: 100%;
 	text-align: center;
 	background: #4aaaa5;
 	color: #fff;
 	bottom: 13px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 h3.sidebar-title {
-	margin-bottom: 18px;
+	margin-bottom: 22px;
 	border-bottom: 2px solid #dddddd;
-	padding: 5px 0px 5px 0px;
-	font-size: 18px;
-	
+	padding: 12px 0px 12px 0px;
+	font-size: 20px;
+
 }
+
+/* Navigation Styles */
 
 nav{
 	float: none;
@@ -821,11 +601,12 @@ nav ul{
 nav ul li{
 	display: inline-block;
 	text-align: center;
-	padding: 0 60px 0 60px; 
+	padding: 0 75px 0 75px; 
 	border-right: 1px solid #ccc;
 }
 
-nav ul li:last-child {
+
+nav ul li:last-child { 
 	border-right: none;
 }
 
@@ -836,10 +617,13 @@ nav ul li a {
 	text-decoration: none;
 }
 
+/* Side Bar Main Styles */
+
 p{
 	margin-top: -10px;
-	font-size: 11px;
-	line-height: 18px;
+	font-size: 13px;
+	line-height: 25px;
+	font-weight: 500;
 }
 
 .main{
@@ -849,13 +633,16 @@ p{
 
 img.profilepic {
 	float: left;
-	margin:18px -8px 17px -23px;
-    width: 560px;
-    height: 200px;
+	margin:27px -8px 35px -40px;
+	padding-bottom: 10px;
+    width: 315px;
+    height: 255px;
+    max-width: none;
+
     
 }
 
-/* Side Bar Styles */
+/* Media Buttons in Side Bar Styles */
 
 ul.buttons {
 /*Base Class for Buttons*/
@@ -866,23 +653,27 @@ ul.buttons li.abtn {
 }
 
 ul.buttons li.abtn a img {
-	max-width: 50px;
-	margin-right: 9px;
+	max-width: 65px;
+	margin-right: 5px;
 	margin-bottom: 5px;
+	margin-top: 4px;
+	margin-left: 2px;
 }
 
 ul.buttons li.abtn:nth-child(3n) a img {
 	margin-right: 0px;
 }
 
+/* Portfolio Styles  */
+
 li.project-box {
 	display: inline-block;
-	width: 175px;
-	height: 106px;
+	width: 265px;
+	height: 130px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: -7px -3px 15px 12px;
+	margin: -5px 11px 11px 0px;
 }
 
 li.hangman {
@@ -935,9 +726,9 @@ input[type="text"], input[type="email"] {
 
 textarea {
 	width: 100%;
-	height: 49px;
+	height: 200px;
 	margin-top: 8px;
-	margin-bottom: 10px;
+	margin-bottom: 16px;
 	border: 1px solid #ddd;
 	padding: 4px 8px;
 	font-size: 12px;
@@ -955,10 +746,10 @@ input[type="submit"] {
 	position: fixed;
 	background: #fff;
 	width: 600px; 
-	height: 375px;
-	margin: 17px;
+	height: 550px;
+	margin: 20px;
 	border: 1px solid #dddddd;
-	padding: 17px;
+	padding: 20px;
 }
 
 #right-column {
@@ -966,8 +757,8 @@ input[type="submit"] {
 	bottom: 20px;
 	background: #fff;
 	width: 600px;
-	height: 150px;
-	margin: 0px 20px 70px 17px;
+	height: 180px;
+	margin: 0px 20px 70px 20px;
 	border: 1px solid #dddddd;
 	padding: 5px 20px 5px 20px;
 }
@@ -985,7 +776,7 @@ footer {
 }
 
 
-
+}
 	
 
 
