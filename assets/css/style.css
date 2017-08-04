@@ -30,7 +30,7 @@ h1,h2,h3{
 }
 
 p {
-	margin-bottom: 25px;
+	margin-bottom: 2px;
 }
 
 /* Page Title Styles */
@@ -124,8 +124,9 @@ nav ul li a:hover {
 
 img.profilepic {
 	float: left; 
-	margin: 39px -5px 35px -33px;
-	max-width: 250px;
+	margin: 42px -5px 35px -33px;
+	max-width: 325px;
+	padding-bottom: 12px;
 	transform: rotate(90deg);
 }
 
