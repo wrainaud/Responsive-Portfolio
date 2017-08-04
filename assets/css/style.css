@@ -126,7 +126,7 @@ img.profilepic {
 	float: left; 
 	margin: 42px -5px 35px -33px;
 	max-width: 325px;
-	padding-bottom: 12px;
+	padding-bottom: 17px;
 	transform: rotate(90deg);
 }
 
@@ -383,8 +383,9 @@ nav ul li a:hover {
 
 img.profilepic {
 	float: left; 
-	margin: 39px -5px 35px -33px;
-	max-width: 250px;
+	margin: 42px -5px 35px -33px;
+	max-width: 325px;
+	padding-bottom: 17px;
 	transform: rotate(90deg);
 }
 
